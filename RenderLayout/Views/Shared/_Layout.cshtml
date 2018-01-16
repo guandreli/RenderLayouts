@@ -16,8 +16,12 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
-    @Html.Partial("_RodaPe")
+    @if (IsSectionDefined("teste")) {
+        @RenderSection("teste")
+    }
+    else {
+        @Html.Partial("_RodaPe")
+    }
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
