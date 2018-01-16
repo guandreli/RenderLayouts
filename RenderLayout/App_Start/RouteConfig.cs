@@ -17,13 +17,6 @@ namespace RenderLayout {
             );
 
             routes.MapRoute(
-                name: "Home Admin",
-                url: "admin/",
-                defaults: new { controller = "Home", action = "Index" },
-                namespaces: new [] { "RenderLayout.Areas.Admin" }
-            );
-
-            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
