@@ -188,6 +188,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Sobre\Sobre.cshtml" />
     <Content Include="Views\Shared\_Topo.cshtml" />
+    <Content Include="Views\Shared\_RodaPe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
